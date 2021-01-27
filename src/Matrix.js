@@ -5,8 +5,11 @@ import ColorSelector from './ColorSelector.js'
 
 export default class Matrix extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
+    this.state = {
+      color:this.color
+    };
   }
 
   genRow = (vals) => (
